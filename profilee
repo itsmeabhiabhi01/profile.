@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .profile {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #007bff;
+            transition: transform 0.3s, border 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+            border: 3px solid #0056b3;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .profile-user-id {
+            font-size: 16px;
+            color: #aaaaaa;
+            margin-bottom: 10px;
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #dddddd;
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .profile-stat {
+            text-align: center;
+        }
+
+        .profile-stat-label {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        .profile-stat-count {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .profile-actions {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .profile-action-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .profile-action-button:hover {
+            background-color: #0056b3;
+        }
+
+        .profile-social-media {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .profile-social-media a {
+            color: #aaaaaa;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .profile-social-media a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://example.com/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">John Doe</div>
+            <div class="profile-user-id">@johndoe</div>
+            <div class="profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eu aliquam nisl nisi eget nisl.</div>
+            <div class="profile-stats">
+                <div class="profile-stat">
+                    <div class="profile-stat-label">Posts</div>
+                    <div class="profile-stat-count">123</div>
+                </div>
+                <div class="profile-stat">
+                    <div class="profile-stat-label">Following</div>
+                    <div class="profile-stat-count">456</div>
+                </div>
+                <div class="profile-stat">
+                    <div class="profile-stat-label">Followers</div>
+                    <div class="profile-stat-count">789</div>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button class="profile-action-button">Edit Profile</button>
+                <button class="profile-action-button">Share Profile</button>
+            </div>
+            <div class="profile-social-media">
+                <a href="https://www.facebook.com/johndoe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/johndoe" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
